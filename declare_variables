@@ -1,0 +1,46 @@
+// SPDX-License-Identifier:MIT
+pragma solidity ^0.8.12;
+contract Storage {
+
+   uint number;
+    //1
+    // takes a value _number and assigns it to the state variable number
+    function setNumber(uint _number) public {
+          number = _number;
+    }
+
+    // returns the value of the state variable number
+    function getNumber() public view returns(uint) {
+        return  number;
+    }
+    //2
+     int e;
+
+    // takes a value _number and assigns it to the state variable number
+    function setNew(int _e) public {
+          e = _e;
+    }
+
+    // returns the value of the state variable number
+    function getNew() public view returns(int) {
+        return e;
+    }
+    //3
+    string str;
+    function setString(string memory _str) public {
+        str = _str;
+    }
+    function getString() public view returns (string memory) {
+    return str;
+    }
+    //4
+   address sad;
+
+    function setAddre(address _sad) public  {
+        sad = _sad;
+    }
+
+    function getAddre() public view returns (address) {
+        return sad;
+    }
+ }
